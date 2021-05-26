@@ -1,0 +1,880 @@
+/*******************************  STYLE GÉNÉRAL MOBILE  *******************************/
+* {
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100%;
+    width: 100%;
+}
+
+button {
+    background-color: #0d943a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center
+}
+    
+button:hover {
+    background-color: #389583;
+}
+    
+a {
+    text-decoration: none;
+}
+    
+nav {
+    display: flex;
+    width: 100%;
+}
+    
+ul {
+    display: flex;
+    width: 100%;
+}
+    
+li {
+    width: 33%;
+    background-color: #0d943a;
+    border: solid #f0f0f0 1px;
+    border-radius: 5px;
+    list-style-type: none;
+    vertical-align: middle;
+}
+    
+li a {
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    padding: 7%;
+    color: white !important;
+    text-align: center;
+    text-decoration: none !important;
+    
+}
+        
+li:hover {
+    background-color: #389583;
+    transform: scale(1.01);
+}
+
+.transparent {
+    width: 40%;
+    padding: 2%;
+    position: absolute;
+    top: 0.5%;
+    left: 30%;
+    right: 30%;
+    background-color: rgba(230, 230, 230, 0.9);
+    border-radius: 10px;
+}
+
+.transparent img{
+    max-width: 100%;
+}
+
+/*******************************  STYLE GÉNÉRAL DESKTOP  *******************************/
+@media only screen and (min-width: 900px){
+    
+    button {
+        padding: 2%;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    
+    nav {
+        position: absolute;
+        display: block;
+        width: 40%;
+        right: 1%;
+        top: 5%;
+    }
+    
+    ul {
+        text-align: center;
+        position:absolute;
+        right:25%;
+    }
+    
+    li {
+        width: 80%;
+        margin: auto;
+        background-color: #0d943a;
+        border: solid #f0f0f0 1px;
+        border-radius: 5px;
+        list-style-type: none;
+    }
+    
+    li a {
+        font-size: 16px;
+        padding: 15%;
+    }
+    
+    .transparent {
+        width: 18%;
+        top: 3%;
+        left: 3%;
+        margin: 0;
+    }
+}
+/*******************************  PAGE CONNEXION  *******************************/
+
+
+
+/****** VERSION MOBILE CONNEXION ******/
+
+.connection_upper {
+    background-color: white;
+    min-height: 40vh;
+    text-align: center;
+}
+
+.connection_upper img {
+    padding: 5%;
+    margin-top: 8vh;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.connection_down {
+    background-color: #f2f2f2;
+    min-height: 60vh;
+    text-align: center;
+}
+
+.connection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:50px;
+}
+
+.connection form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.connection h1{
+    color: #383838;
+    font-size:1.7em;
+    margin-bottom:10px;
+}
+
+.connection input {
+    margin: auto;
+    margin-top: 1%;
+    width: 80%;
+    padding: 3%;
+    border-color: #383838;
+    border-radius: 5px;
+}
+
+.connection button{
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 50%;
+    padding: 3%;
+}
+
+.connection p {
+    display: block;
+    margin-top: 10%;
+}
+
+.connection p a:hover {
+    color: #389583;
+}
+
+.connection form a{
+    text-decoration:none;
+    color: #0d943a;;
+}
+
+
+.image_header {
+    max-width: 100%;
+}
+
+
+/****** VERSION DESKTOP CONNEXION ******/
+
+@media only screen and (min-width: 900px){
+    
+    #page_connection {
+        min-height: 100%;
+    }
+
+    #page_connection header{
+        height: 25vh;
+        display:block;
+        z-index: 2;
+    }
+    
+    .connection_container{
+        height: 68%;
+        display:grid;
+        grid-template-columns:65% 35%;
+        
+    }
+    
+    .connection_upper {
+        min-height: 75vh;
+        padding: 10%;
+    }
+    
+    .connection_down{
+        min-height: 100%;
+        padding-top:20%;
+    }
+    
+    .connection h1{
+        font-size:3em;
+    }
+    
+    .connection button{
+        padding: 2%;
+    }
+    
+    .connection form p{
+        display: block;
+        width: 70%;
+        margin: auto;
+        margin-top: 10%;
+        font-size:1.2em;
+        color: #0d943a;
+    }
+}
+
+/*******************************  PAGE NOUVEAU COMPTE  *******************************/
+
+/****** VERSION MOBILE CRÉER COMPTE ******/
+
+.nouveaucompte_upper {
+    background-color: white;
+    min-height: 40vh;
+    text-align: center;
+}
+
+.nouveaucompte_upper img {
+    padding: 5%;
+    margin-top: 8vh;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.nouveaucompte_down {
+    background-color: #f2f2f2;
+    min-height: 60vh;
+    text-align: center;
+}
+
+.nouveaucompte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:50px;
+}
+
+.nouveaucompte form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.nouveaucompte h1{
+    color: #383838;
+    font-size:1.7em;
+    margin-bottom:10px;
+}
+
+.nouveaucompte input {
+    margin: auto;
+    margin-top: 1%;
+    border-color: #383838;
+    width: 80%;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+.nouveaucompte button{
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 50%;
+    padding: 3%;
+}
+
+.nouveaucompte p {
+    display: block;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.nouveaucompte p a:hover {
+    color: #389583;
+}
+
+.nouveaucompte form a{
+    text-decoration:none;
+    color: #0d943a;
+}
+
+#confirmation{
+    color:red;
+    margin-top:15px;
+}
+
+/****** VERSION DESKTOP CRﾃ右R COMPTE ******/
+
+@media only screen and (min-width: 900px){
+    
+    
+    #page_nouveaucompte {
+        min-height: 100%;
+    }
+
+    #page_nouveaucompte header{
+        height: 25vh;
+        display:block;
+        z-index: 2;
+    }
+    
+    .nouveaucompte_container{
+        height: 68%;
+        display:grid;
+        grid-template-columns:65% 35%;
+        
+    }
+    
+    .nouveaucompte_upper {
+        min-height: 75vh;
+        padding: 10%;
+        padding-top: 15%;
+    }
+    
+    .nouveaucompte_down{
+        min-height: 100%;
+    }
+    
+    .nouveaucompte h1{
+        font-size:3em;
+    }
+    
+    .nouveaucompte button{
+        padding: 2%;
+    }
+    
+    .nouveaucompte form p{
+        display: block;
+        width: 70%;
+        margin: auto;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        font-size:1.2em;
+    }
+}
+
+/*******************************  PAGE COMPTE  *******************************/
+
+/****** VERSION MOBILE COMPTE ******/
+
+
+.compte_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    min-width: 100%;
+}
+
+.compte_nomClient{
+    background-color: rgb(35, 35, 40);
+    color: white;
+    padding:10px;
+    text-align: center;
+    margin-top:18%;
+    margin-bottom: 8%;
+    border-radius: 4px;
+}
+
+.compte_nomClient p{ 
+    display:inline;
+}
+
+#compte_hidden{
+    display: none;
+}
+
+.compte_left, .compte_right {
+    width: 80%;
+}
+
+.comptes{
+    width: 100%;
+    padding:20px;
+    color: #383838;
+}
+
+.comptes th{
+    background-color: rgb(35, 35, 40);
+    color: white;
+    border-radius:4px 4px 0 0;
+    padding:10px;
+    min-width: 50%;
+}
+
+.compte table, .compte table tbody {
+    width: 100%
+}
+
+.comptes td{
+    background-color: white;
+}
+
+.comptes td a, .solde{
+    color: #383838;
+    text-decoration:none;
+    padding: 10px;
+}
+    
+.compte_last, .compte_premier {
+    background-color: #0d943a !important;
+    text-align: center;
+    
+}
+    
+.compte_last a, .compte_premier a {
+    color: white !important;
+    padding: 7px;
+}
+
+
+.compte_action {
+    width: 100%;
+    text-align: center;
+}
+
+.compte_action td {
+    padding: 10%;
+}
+
+.comptes_deconnection{
+    align-items:center;
+    margin-top:8%;
+}
+
+#deconnection{
+    width: 50%;
+    margin-left: 25%;
+    padding: 2%;
+}
+
+#deconnection:hover{
+    background-color: #389583;
+}
+
+#deconnection a{
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    color: white;
+    text-decoration:none;
+    padding: 2%;
+}
+
+/****** VERSION DESKTOP COMPTE ******/
+
+@media only screen and (min-width: 900px){
+    
+    #page_compte header{
+        height: 25vh;
+        display:block;
+    }
+
+    .compte_container{
+        display: grid;
+        grid-template-columns: 65% 35%;
+    }
+
+    .compte_left{
+        background-color: #dedede;
+        height: 100%;
+        width: 100%;
+        padding-left:50px;
+    }
+
+    .compte_right{
+        background: white;
+        height:100%;
+        width:100%;
+        margin:0;
+        padding: 8%;
+    }
+
+    .compte_nomClient{
+        width:60%;
+        margin: auto;
+        margin-top:5%;
+        padding:0;
+        background-color:transparent;
+        font-size:30px;
+        color: #383838;
+    }
+
+    #compte_hidden{
+        display:inline;
+    }
+
+    .comptes{
+        margin: 20px 20px 20px 0;
+    }
+    
+    .compte_last, .compte_premier {
+    text-align: left;
+    }
+    
+    .compte_last a, .compte_premier a {
+    padding: 0;
+    }
+
+    .comptes table{
+        width:80%;
+        margin:0;
+        padding: 20px 0;
+        font-size:25px;
+    }
+
+    .comptes th{  
+        padding:20px; 
+    }
+    
+    .comptes td{
+        background-color: white;
+    }
+    
+    .comptes td a {
+        display: block;
+        min-height: 100%;
+        min-width: 100%;
+        padding: 20px;
+    }
+    
+    .compte_premier:hover, .compte_last:hover {
+        background-color: #389583 !important;
+    }
+    
+    .compte_action {
+        margin-top: 50% !important;
+}
+
+    .compte_action th{
+        background-color:transparent;
+        color: #383838;
+        float:left;
+        padding:0;
+        padding-bottom: 15px;
+        margin-top: 30px;
+    }
+
+    .compte_action td{
+        background-color: #0d943a;
+        padding: 0;
+    }
+    
+    .compte_action td a{
+        display: block;
+        color: white;
+        min-width:100%;
+        min-height: 100%;
+        padding: 60px;
+    }
+
+    .comptes_deconnection{
+        padding-left:13%;
+    }
+
+    #deconnection{
+        width:50%;
+        text-align: center;
+    }
+}
+
+
+
+
+
+/*******************************  PAGES VIREMENT ET PAIEMENT  *******************************/
+
+.pages_transaction {
+    background-color: white;
+    width: 100%;
+}
+
+/****** HEADER ******/
+
+.pages_transaction div h1 {
+    width: 60%;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 4%;
+    padding: 2%;
+    color: white;
+    background-color: #0d943a;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/****** FORMULAIRE ******/
+
+.pages_transaction form {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: #383838;
+}
+
+.transac-input,
+.date-transaction {
+    margin: auto;
+    margin-top: 1%;
+    background-color: #dedede;
+    width: 80%;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+#div-montant {
+    padding-left:0;
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
+}
+
+#div-montant label {
+    width: 50%;
+}
+
+.pages_transaction label {
+    width: 49%;
+    text-align: left;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.pages_transaction input,
+#compte,
+#fournisseur{
+    width: 49%;
+    background-color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 1%;
+}
+
+/****** BUTTONS ******/
+
+.pages_transaction button {
+    color: white;
+    background-color: #0d943a;
+    border-radius: 5px;
+    border: 0;
+    width: 30%;
+}
+
+.pages_transaction button:hover {
+    background-color: rgba(4, 76, 84, 0.8);
+}
+
+#end-buttons {
+    margin-top: 4%;
+    font-size: 24px;
+}
+
+#end-buttons button a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.envoyer-money {
+    float: right;
+    margin-right: 10%;
+}
+
+.retour-transac {
+    float: left;
+    margin-left: 10%;
+}
+
+
+/****** LOGO BOTTOM ******/
+
+.pages_transaction img {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 25%;
+    margin-left: 25%;
+    max-width: 50%;
+}
+
+
+/****** VERSION DESKTOP PAIEMENT ET VIREMENT ******/
+
+@media only screen and (min-width: 900px) {
+
+    .pages_transaction div h1 {
+        max-width: 25%;
+    }
+
+    .pages_transaction div {
+        width: 100%;
+    }
+
+    .pages_transaction form {
+        max-width: 45%;
+    }
+
+    .pages_transaction img {
+        margin-right: 35%;
+        margin-left: 35%;
+        max-width: 30%;
+    }
+
+    .envoyer-money {
+        float: right;
+        margin-right: 0;
+    }
+
+    .retour-transac {
+        float: left;
+        margin-left: 0;
+    }
+}
+
+
+/*******************************  PAGE PAIEMENT ONLY  *******************************/
+
+.date-transaction {
+    text-align: left;
+    display: flex;
+}
+
+#labeldate {
+    width: 50%;
+    padding: 1%;
+}
+
+#datedujour {
+    width: 50%;
+    text-align: right;
+    padding-top: 1%;
+}
+
+/*******************************  HISTORIQUE  *******************************/
+
+#section_historique{
+     padding-top:50px;
+     padding-bottom:50px;
+}
+
+#table_historique{
+    margin:auto;
+}
+
+.tr_historique{
+    text-align:center;
+    border:1px black solid;
+    background-color:#ffffff;
+}
+
+.tr_historique:first-child{
+    background-color:#0D943A;
+}
+
+.tr_historique:first-child:hover{
+    background-color:#0D943A;
+}
+
+.th_historique{
+    padding:20px;
+}
+
+.td_historique{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.tr_historique:hover{
+    background-color:#cccccc;
+}
+
+#section_historique a{
+    color:black;
+    text-decoration:none;
+}
+
+/*******************************  FOOTER  *******************************/
+footer {
+    background-color: rgb(35, 35, 40);
+    color: white;
+    margin-top: 25px;
+}
+
+footer ul {
+    display: initial;
+    text-align: center;
+    position: initial;
+    right: initial;
+}
+
+footer li {
+    width: initial;
+    background-color: initial;
+    border: none;
+}
+
+footer li:hover {
+    background-color: initial;
+    transform: none;
+}
+
+footer a {
+    color: white;
+    text-align: left;
+    font-size: initial;
+}
+
+footer a:hover {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.footer-copyright a {
+    color: #4f6ced;
+}
+
+
+@media only screen and (min-width: 900px){
+    
+    footer ul {
+    text-align: left;
+    }
+}
+
+
+
+
+
+
+
+
